@@ -46,7 +46,7 @@ func search(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	flag.IntVar(&port, "port", 8000, "server port")
-	flag.StringVar(&db, "db", "./assets/ip2region.db", "ip database")
+	flag.StringVar(&db, "db", "ip2region.db", "ip database")
 	flag.Parse()
 
 	var err error
